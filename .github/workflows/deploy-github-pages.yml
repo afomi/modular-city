@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ pages ]
+    branches:
+    - main
   workflow_dispatch:
 
 permissions:
@@ -24,7 +25,8 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+          cache: 'npm'
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
