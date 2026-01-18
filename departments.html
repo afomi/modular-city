@@ -9,7 +9,7 @@ title: "Departments"
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         City Departments
       </h1>
-      <p class="mt-4 text-lg text-gray-600">
+      <p class="mt-4 text-lg text-gray-700">
         {{ site.data.civic.jurisdiction.name }} is organized into departments that provide services to our {{ site.data.civic.jurisdiction.population | divided_by: 1000 }},000+ residents.
       </p>
     </div>
@@ -39,7 +39,7 @@ title: "Departments"
               {{ agency.name }}
             </h2>
           </div>
-          <p class="mt-4 text-base text-gray-600">
+          <p class="mt-4 text-base text-gray-700">
             {{ agency.description }}
           </p>
           <dl class="mt-6 space-y-3 text-sm">
@@ -85,7 +85,7 @@ title: "Departments"
               <dd class="text-gray-700">
                 <a
                   href="mailto:{{ agency.email }}"
-                  class="text-primary-600 hover:text-primary-500"
+                  class="text-primary-800 hover:text-primary-500"
                 >
                   {{ agency.email }}
                 </a>
@@ -157,11 +157,11 @@ title: "Departments"
     </div>
 
     <div class="mt-16 text-center">
-      <p class="text-sm text-gray-500">
+      <p class="text-sm text-gray-700">
         Data source:
         <a
           href="/civic-data.json"
-          class="text-primary-600 hover:text-primary-500"
+          class="text-primary-800 hover:text-primary-500"
         >
           civic-data.json
         </a>
