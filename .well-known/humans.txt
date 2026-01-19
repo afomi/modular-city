@@ -1,0 +1,24 @@
+---
+permalink: /.well-known/humans.txt
+---
+/* TEAM */
+Site: Modular City
+URL: https://modularcity.org
+Description: A model civic website demonstrating best practices
+
+/* THANKS */
+USWDS - U.S. Web Design System for inspiration
+Tailwind CSS - Utility-first CSS framework
+Jekyll - Static site generator
+axe-core - Accessibility testing
+
+/* SITE */
+Standards: HTML5, CSS3, WCAG 2.1 AAA
+Components: Tailwind CSS 4.x
+Software: Jekyll, Ruby
+Language: English
+
+/* DATA */
+Open Data: /civic-data.json
+Calendar: /_data/calendar.json
+Schema: https://civic.bot/schema/civic-data.schema.json
