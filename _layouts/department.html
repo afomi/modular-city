@@ -27,7 +27,7 @@ layout: default
           class="text-gray-900 font-medium"
           aria-current="page"
         >
-          {{ page.name }}
+          {{ page.title }}
         </li>
       </ol>
     </nav>
@@ -52,7 +52,7 @@ layout: default
         </div>
         <div>
           <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {{ page.name }}
+            {{ page.title }}
           </h1>
           <p class="mt-1 text-lg text-gray-700">
             {{ page.description }}
@@ -74,7 +74,7 @@ layout: default
             Services we provide
           </h2>
           <p class="mt-2 text-gray-700">
-            {{ page.name }} provides {{ dept_services.size }} service{% if dept_services.size > 1 %}s{% endif %} to residents and businesses.
+            {{ page.title }} provides {{ dept_services.size }} service{% if dept_services.size > 1 %}s{% endif %} to residents and businesses.
           </p>
           <ul class="mt-6 space-y-4">
             {% for service in dept_services %}
@@ -115,7 +115,7 @@ layout: default
           </h2>
           <div class="mt-4 prose prose-gray max-w-none">
             <p>
-              {{ page.name }} is responsible for {{ page.description | downcase }} in {{ site.data.civic.jurisdiction.name }}.
+              {{ page.title }} is responsible for {{ page.description | downcase }} in {{ site.data.civic.jurisdiction.name }}.
             </p>
             {% if director %}
             <p>
@@ -239,10 +239,12 @@ layout: default
       <p class="text-sm text-gray-700">
         Data source:
         <a
-          href="/civic-data.json"
+          href="https://github.com/civicstudio/modular-city/blob/main/_data/departments.json"
           class="text-primary-800 hover:text-primary-500"
+          target="_blank"
+          rel="noopener"
         >
-          civic-data.json
+          _data/departments.json
         </a>
       </p>
     </footer>

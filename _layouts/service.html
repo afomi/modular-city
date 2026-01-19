@@ -27,7 +27,7 @@ layout: default
           class="text-gray-900 font-medium"
           aria-current="page"
         >
-          {{ page.name }}
+          {{ page.title }}
         </li>
       </ol>
     </nav>
@@ -38,7 +38,7 @@ layout: default
         User needs
       </p>
       <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        {{ page.name }}
+        {{ page.title }}
       </h1>
     </header>
 
@@ -150,7 +150,7 @@ layout: default
         id="steps-heading"
         class="text-lg font-semibold text-gray-900 mb-6"
       >
-        How to {{ page.name | downcase }}
+        How to {{ page.title | downcase }}
       </h2>
       <ol class="space-y-4">
         {% for step in page.steps %}
@@ -309,10 +309,12 @@ layout: default
       <p class="text-sm text-gray-700">
         Data source:
         <a
-          href="/civic-data.json"
+          href="https://github.com/civicstudio/modular-city/blob/main/_data/services.json"
           class="text-primary-800 hover:text-primary-500"
+          target="_blank"
+          rel="noopener"
         >
-          civic-data.json
+          services.json
         </a>
       </p>
     </footer>
